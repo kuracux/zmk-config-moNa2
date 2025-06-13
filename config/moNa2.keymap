@@ -25,21 +25,24 @@
         expose: expose {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp UP_ARROW>;
+            bindings = <&kp LEFT_CONTROL>, <&macro_press>, <&kp UP_ARROW>;
+
             label = "EXPOSE";
         };
 
         browser_back: browser_back {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_ARROW>;
+            bindings = <&kp LEFT_COMMAND>, <&macro_press>, <&kp LEFT_ARROW>;
+
             label = "BROWSER_BACK";
         };
 
         browser_forward: browser_forward {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp RIGHT_ARROW>;
+            bindings = <&kp LEFT_COMMAND>, <&macro_press>, <&kp RIGHT_ARROW>;
+
             label = "BROWSER_FORWARD";
         };
     };
