@@ -25,7 +25,13 @@
         expose: expose {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL>, <&macro_press>, <&kp UP_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
 
             label = "EXPOSE";
         };
@@ -33,7 +39,13 @@
         browser_back: browser_back {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND>, <&macro_press>, <&kp LEFT_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
 
             label = "BROWSER_BACK";
         };
@@ -41,7 +53,13 @@
         browser_forward: browser_forward {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND>, <&macro_press>, <&kp RIGHT_ARROW>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp RIGHT_ARROW>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
 
             label = "BROWSER_FORWARD";
         };
