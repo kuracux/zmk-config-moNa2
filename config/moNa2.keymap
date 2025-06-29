@@ -92,32 +92,46 @@
             label = "IPAD_BROSER_FORWARD";
         };
 
-        iPad_safari_zoom_in: iPad_safari_zoom_in {
+        ipad_home: ipad_home {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
                 <&kp LEFT_COMMAND>,
                 <&macro_tap>,
-                <&kp PLUS>,
+                <&kp H>,
                 <&macro_release>,
                 <&kp LEFT_COMMAND>;
 
-            label = "IPAD_SAFARI_ZOOM_IN";
+            label = "IPAD_HOME";
         };
 
-        ipad_safari_zoom_out: ipad_safari_zoom_out {
+        ipad_app_change: ipad_app_change {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
                 <&kp LEFT_COMMAND>,
                 <&macro_tap>,
-                <&kp MINUS>,
+                <&kp TAB>,
                 <&macro_release>,
                 <&kp LEFT_COMMAND>;
 
-            label = "IPAD_SAFARI_ZOOM_OUT";
+            label = "IPAD_APP_CHANGE";
+        };
+
+        ipad_spotlight: ipad_spotlight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_COMMAND>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LEFT_COMMAND>;
+
+            label = "IPAD_SPOTLIGHT";
         };
     };
 
@@ -211,10 +225,10 @@
 
         layer_5 {
             bindings = <
-&iPad_browser_back     &iPad_broser_forward  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans                 &trans                &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&ipad_safari_zoom_out  &iPad_safari_zoom_in  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans                 &trans                &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&iPad_browser_back  &iPad_broser_forward  &trans  &trans            &trans                                 &trans  &trans  &trans  &trans  &trans
+&trans              &trans                &trans  &trans            &trans      &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans              &trans                &trans  &ipad_app_change  &ipad_home  &ipad_spotlight    &trans  &trans  &trans  &trans  &trans  &trans
+&trans              &trans                &trans  &trans            &trans      &trans             &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
