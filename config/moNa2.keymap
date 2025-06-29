@@ -225,10 +225,10 @@
 
         layer_5 {
             bindings = <
-&iPad_browser_back  &iPad_broser_forward  &trans  &trans            &trans                                 &trans  &trans  &trans  &trans  &trans
-&trans              &trans                &trans  &trans            &trans      &trans             &trans  &trans  &trans  &trans  &trans  &trans
-&trans              &trans                &trans  &ipad_app_change  &ipad_home  &ipad_spotlight    &trans  &trans  &trans  &trans  &trans  &trans
-&trans              &trans                &trans  &trans            &trans      &trans             &trans  &trans                          &trans
+&iPad_browser_back  &iPad_broser_forward  &trans  &trans  &trans                                 &trans  &trans  &trans  &trans  &trans
+&trans              &trans                &trans  &trans  &trans      &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans              &trans                &trans  &trans  &ipad_home  &ipad_spotlight    &trans  &trans  &trans  &trans  &trans  &trans
+&trans              &trans                &trans  &trans  &trans      &trans             &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
