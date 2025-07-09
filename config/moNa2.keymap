@@ -183,10 +183,10 @@
 
         symbol_and_move {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN
-&kp ESC          &trans             &trans    &trans      &trans       &trans    &trans  &trans         &trans            &kp UP_ARROW          &trans                 &kp PAGE_UP
-&trans           &trans             &trans    &trans      &trans       &trans    &trans  &trans         &kp LEFT_ARROW    &kp DOWN_ARROW        &kp RIGHT_ARROW        &kp PAGE_DOWN
-&trans           &trans             &trans    &trans      &trans       &trans    &trans  &trans                                                                        &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                            &kp AMPERSAND   &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN
+&kp ESC          &trans             &trans    &trans      &trans       &trans    &trans          &kp UP_ARROW    &trans            &trans                &trans                 &kp PAGE_UP
+&trans           &trans             &trans    &trans      &trans       &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &trans                &trans                 &kp PAGE_DOWN
+&trans           &trans             &trans    &trans      &trans       &trans    &trans          &trans                                                                         &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
